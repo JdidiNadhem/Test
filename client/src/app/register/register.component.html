@@ -1,0 +1,90 @@
+<!-- <div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                SignUp
+            </div>
+            <div class="card-body">
+                <form (submit)="signUp()">
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="user.email" name="email" class="form-control" placeholder="Email" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" [(ngModel)]="user.password" name="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <button class="btn btn-primary btn-block">
+                        SignUp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- -->
+
+
+<div class="container">
+    <div class="header">
+      <h2>Create Account</h2>
+    </div>
+    <form id="form" class="form" (submit)="signUp()">
+      <div class="form-control">
+        <label for="username">Full Name</label>
+        <input type="text" [(ngModel)]="user.fullname" name="fullname" placeholder=""  required autofocus />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="username">Email</label>
+        <input type="email" [(ngModel)]="user.email" name="email" placeholder="" id="email" required />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="username">Password</label>
+        <input type="password" type="password" [(ngModel)]="user.password" name="password" placeholder="" id="password" required />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <button>Submit</button>
+    </form>
+  </div>
+  
+  <!-- SOCIAL PANEL HTML -->
+  <div class="social-panel-container">
+    <div class="social-panel">
+      <p>Created with <i class="fa fa-heart"></i> by
+        
+      </p>
+      <button class=" close-btn"><i class="fas fa-times"></i></button>
+          <h4>Get in touch on</h4>
+          <ul>
+  
+            <li>
+              <a href="https://twitter.com/sakshambhambot" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/saksham-bhambota//" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/saksham.bhambota.77/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/saksham.bhambota_" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+    </div>
+  </div>
+ 
+  

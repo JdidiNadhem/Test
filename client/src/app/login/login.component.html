@@ -1,0 +1,20 @@
+
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active"> Log In </h2>
+          <h2 class="inactive underlineHover" routerLink="/register">Register</h2>
+      
+         
+          <!-- Login Form -->
+          <form (submit)="signIn()">
+            <input type="text" [(ngModel)]="user.email" name="email" class="form-control" placeholder="Email" required autofocus>
+            <input type="password" [(ngModel)]="user.password" name="password" class="form-control" placeholder="Password" required>
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+      
+       
+      
+        </div>
+      </div>
+ 
